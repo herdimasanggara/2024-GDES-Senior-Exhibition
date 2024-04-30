@@ -1,51 +1,158 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>backyard</title>
-    <link rel="stylesheet" href="rooms.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/oom6xvm.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      .wrapper {
-        background-color: #ffc60a; /* Daytime color */
-        color: #000000; /* Dark text color for daytime */
-        transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition for color and background */
-        width: 100vw; /* Ensure full viewport width */
-        height: 100vh; /* Ensure full viewport height */
-        display: flex; /* Added display properties to maintain layout integrity */
-        flex-direction: column;
-      }
 
-      body .wrapper.night-mode {
-        background-color: darkslateblue !important; /* Nighttime color */
-        color: white !important; /* Light text color for nighttime */
-      }
-    </style>
-  </head>
-  <body>
-    <div class="wrapper" id="pageWrapper">
-      <div class="header">
-        <a href="index.html" class="logo-link">
-          <img src="black-secondary-2.3png.png" class="logo" />
-        </a>
-        <div class="buttons">
-          <a href="about.html" id="aboutBtn">ABOUT</a>
-          <button id="openBtn">DIRECTORY</button>
+<head>
+  <title>backyard</title>
+  <link rel="stylesheet" href="rooms.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/oom6xvm.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <div class="wrapper" id="pageWrapper">
+    <div class="header">
+      <a href="index.html" class="logo-link">
+        <img src="images/black-secondary-2.3png.png" class="logo" />
+      </a>
+      <div class="buttons">
+        <!-- <a href="about.html" id="aboutBtn">ABOUT</a> -->
+        <button id="openBtn"><span>DIRECTORY</span></button>
+        <!-- Replaced openBtn with toggleButton -->
+      </div>
+    </div>
+
+    <!-- Panel for Directory -->
+    <div id="directoryPanel" class="directory-panel">
+      <div class="main-content">
+        <!-- Row 1 -->
+        <div class="row">
+          <div class="left-panel"><a href="project-pages/gabby-gilbert.html">GABBY GILBERT</a></div>
+          <div class="right-panel">
+            <i>Cursed to Find Myself</i> is my own personal breakup memoir that discusses themes of love, betrayal,
+            heartache, and finding one’s self after it’s all over. This story encapsulates my thoughts and feelings
+            during key moments in the midst of and after my relationship with my first love, and how I managed to drag
+            myself out of my depressive slump to find out who I truly was. The book is written to follow a playlist of
+            songs by Olivia Rodrigo, with pages filled with her lyrics to the songs I felt best suited my story and ones
+            that resonated the most with me.It can be read with or without listening to the songs attached to each
+            chapter, but it is just a way to further include the readers into my thoughts and feelings throughout the
+            story, and even now as I look back on everything. If anyone reading this is going through anything similar,
+            just know that you are not alone. Thank you for taking the time to unpack and read my story.
+          </div>
+        </div>
+        <!-- Row 2 -->
+        <div class="row">
+          <div class="left-panel"><a href="project-pages/betsy-kinstle.html">BETSY KINSTLE</a></div>
+          <div class="right-panel">
+            <i>steeplechase</i> is a typeface inspired by horses, with accompanying illustrations by me. I was inspired
+            by anatomy, athleticism, and both physical and mental strength.
+          </div>
+        </div>
+        <!-- Row 3 -->
+        <div class="row">
+          <div class="left-panel"><a href="project-pages/holiday-price.html">HOLIDAY PRICE</a></div>
+          <div class="right-panel">
+            <i>Sensory Box.</i> I aimed to delve into the realms of sensory perception, particularly emphasizing the
+            tactile experience, and exploring repetition and patterns. My exploration revolved around discovering the
+            solace, comfort, and sense of connection I find with interacting with my environment and trying to recreate
+            that sense of fulfillment for those participating and interacting in my work. Some of the visual identity
+            taken from personal sense of connection to water based fauna fostered by aquatic environments, feeling a
+            sense of relatability due to these creatures also engaging with the world perceptually different than other
+            people do at least tactilely. The outcome of all these explorations is a sensory box that you can enter and
+            experience multiple tactile senses on the inside and outside of it. The goal is for the participants and
+            observers to be able to interact with the piece, hopefully engaging in their own unique experience with the
+            piece. The intention is to provide a closed space where the participant can have a moment of stillness, if
+            they desire they can touch and interact with the structure, or they can just enjoy the visual experience.
+          </div>
+        </div>
+        <!-- Row 4 -->
+        <div class="row">
+          <div class="left-panel"><a href="project-pages/jangmi-paik.html">JANGMI PAIK</a></div>
+          <div class="right-panel">
+            <i>Memories and Nostalgia.</i> Ever since I moved to a different country, memories of Korea have become more
+            special, forming the core of my identity. I believe stone lithography has a strong correlation to memory and
+            pearls. Oysters build layers on top of an irritant, using it as a nucleus, much like people build distorted
+            layers on top of the original memory that fades. Stone lithography involves a significant amount of
+            irritation of the surface and layers of grease that form the image. The series of prints, using my childhood
+            home and lithography as the core, build layers on top of each other, combining them into the theme of
+            memories and nostalgia.
+
+            I am also interested in the process of digital degradation. In a similar way to how digital copies are made
+            and circulated, memories can be linked to copies of experiences stored in our minds. Each time we recall a
+            memory, it may degrade and become distorted, influenced by factors such as personal biases, emotions, and
+            subsequent experiences. Just as digital images lose quality with each copy, memories may lose fidelity and
+            accuracy over time. This creates room for imagination, and I believe the distorted layers of memories are
+            what make nostalgia special. I aimed to visualize this idea in a format of digital web: <a
+              href="https://nostalgia.city/">nostalgia.city.</a>
+          </div>
         </div>
       </div>
+    </div>
 
-      <div id="directory" class="slide-out">
-        <div class="directory-content">
-          <button id="closeBtn">X</button>
-        </div>
-      </div>
-
+    <div class="name-container">
       <div class="main">
         <img src="Backyard_Desktop.svg" class="desktop" />
         <img src="Backyard_Phone.svg" class="mobile" />
       </div>
     </div>
+
+    <div class="overlay"></div>
+
     <script>
+      // Get the overlay element
+      var overlay = document.querySelector('.overlay');
+
+      // Function to update the overlay based on the time of day
+      function updateOverlay() {
+        var now = new Date();
+        var hours = now.getHours();
+        var minutes = now.getMinutes();
+        var totalMinutes = hours * 60 + minutes;
+        var percentageOfDay = totalMinutes / (24 * 60);
+
+        // Interpolate between day, evening, and night colors with original opacities
+        var dayColor = [0, 0, 0]; // Yellow
+        var eveningColor = [100, 100, 0]; // Orange
+        var nightColor = [0, 0, 0];    // Black
+        var dayOpacity = 0.7;          // Original opacity for daytime
+        var eveningOpacity = 0.1;      // Original opacity for evening
+        var nightOpacity = 0.7;        // Original opacity for nighttime
+
+        var interpolatedColor;
+        var interpolatedOpacity;
+
+        if (percentageOfDay < 0.5) {
+          // Daytime to evening transition
+          interpolatedColor = interpolateColor(dayColor, eveningColor, percentageOfDay * 2);
+          interpolatedOpacity = interpolateOpacity(dayOpacity, eveningOpacity, percentageOfDay * 2);
+        } else {
+          // Evening to nighttime transition
+          interpolatedColor = interpolateColor(eveningColor, nightColor, (percentageOfDay - 0.5) * 2);
+          interpolatedOpacity = interpolateOpacity(eveningOpacity, nightOpacity, (percentageOfDay - 0.5) * 2);
+        }
+
+        // Set the background color and opacity of the overlay
+        overlay.style.backgroundColor = 'rgba(' + interpolatedColor.join(',') + ', ' + interpolatedOpacity + ')';
+      }
+
+      // Function to interpolate between two colors
+      function interpolateColor(color1, color2, ratio) {
+        var result = [];
+        for (var i = 0; i < 3; i++) {
+          result.push(Math.round(color1[i] * (1 - ratio) + color2[i] * ratio));
+        }
+        return result;
+      }
+
+      // Function to interpolate between two opacities
+      function interpolateOpacity(opacity1, opacity2, ratio) {
+        return opacity1 * (1 - ratio) + opacity2 * ratio;
+      }
+
+      // Update the overlay initially
+      updateOverlay();
+
+      // Update the overlay every second for smoother transition
+      setInterval(updateOverlay, 1000);
       document.addEventListener("DOMContentLoaded", function () {
         document
           .getElementById("pageWrapper")
@@ -55,6 +162,165 @@
             console.log("Toggled class. New class: " + this.className);
           });
       });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        var panel = document.getElementById("directoryPanel");
+        panel.style.transform = "translateY(-100%)"; // Ensure initial state is set for JavaScript
+
+        var postItColors = [
+          "#ffadad",
+          "#ffd6a5",
+          "#fdffb6",
+          "#caffbf",
+          "#9bf6ff",
+          "#a0c4ff",
+          "#bdb2ff",
+          "#ffc6ff",
+        ];
+
+        // Apply random skew to the text inside openBtn
+        var openBtnText = document.querySelector("#openBtn span");
+        openBtnText.style.display = "inline-block"; // Make sure the span behaves like an inline element that can transform independently
+        openBtnText.style.transform = getRandomSkew();
+
+        document
+          .getElementById("openBtn")
+          .addEventListener("click", function () {
+            // Toggle panel visibility
+            if (panel.style.transform === "translateY(-100%)") {
+              panel.style.backgroundColor =
+                postItColors[Math.floor(Math.random() * postItColors.length)];
+              panel.style.transform = "translateY(0%)"; // Slide down
+            } else {
+              panel.style.transform = "translateY(-100%)"; // Slide up
+            }
+          });
+
+        document
+          .getElementById("openBtn")
+          .addEventListener("mouseover", function () {
+            var randomColor =
+              postItColors[Math.floor(Math.random() * postItColors.length)];
+            this.style.backgroundColor = randomColor;
+          });
+
+        document
+          .getElementById("openBtn")
+          .addEventListener("mouseout", function () {
+            this.style.backgroundColor = ""; // Revert to default or specify a default color
+          });
+      });
+
+      function getRandomSkew() {
+        var skewX = Math.random() * 25 - 10; // Skew range between -10deg to 10deg
+        var skewY = Math.random() * 25 - 10;
+        return "skew(" + skewX + "deg, " + skewY + "deg)";
+      }
+
+      // Apply random skew to openBtn text on load
+      var openBtnText = document.querySelector("#openBtn span");
+      openBtnText.style.transform = getRandomSkew();
+
+      // Function to generate random coordinates within the name-container
+      function getRandomCoordinates(container) {
+        var containerRect = container.getBoundingClientRect();
+        var padding = 10; // Assume a padding of 10px on all sides if any
+        var diameter = 100; // Diameter of the circle (name tag)
+
+        // Adjust the range to ensure the entire name tag stays within the viewport
+        var x =
+          Math.random() * (containerRect.width - diameter - padding * 2) +
+          padding;
+        var y =
+          Math.random() * (containerRect.height - diameter - padding * 2) +
+          padding;
+
+        return { x: x, y: y };
+      }
+
+      // Function to remove and reposition name tags
+      function refreshNameTags(container) {
+        // Remove existing name tags
+        const existingTags = container.querySelectorAll(".name-tag");
+        existingTags.forEach(function (tag) {
+          tag.parentNode.removeChild(tag);
+        });
+
+        // Recreate and reposition name tags
+        createAndPositionNames(container);
+      }
+
+      // Function to create and position the name tags within the container
+      function createAndPositionNames(container) {
+        var postItColors = [
+          "#ffadad",
+          "#ffd6a5",
+          "#fdffb6",
+          "#caffbf",
+          "#9bf6ff",
+          "#a0c4ff",
+          "#bdb2ff",
+          "#ffc6ff",
+        ];
+        var namesAndLinks = [
+          { name: "GABBY GILBERT", link: "" },
+          { name: "BETSY KINSTLE", link: "" },
+          { name: "HOLIDAY PRICE", link: "" },
+          { name: "JANGMI PAIK", link: "" },
+        ];
+
+        namesAndLinks.forEach(function (item) {
+          var coordinates = getRandomCoordinates(container);
+          var nameLink = document.createElement("a");
+          nameLink.href = item.link;
+          var nameTag = document.createElement("div");
+          nameTag.textContent = item.name;
+          nameTag.classList.add("name-tag");
+          nameTag.style.left = coordinates.x + "px";
+          nameTag.style.top = coordinates.y + "px";
+          nameTag.style.transform = getRandomSkew(); // Apply random skew
+
+          // Add event listeners for hover effects
+          nameTag.addEventListener("mouseover", function () {
+            var randomColor =
+              postItColors[Math.floor(Math.random() * postItColors.length)];
+            this.style.backgroundColor = randomColor;
+            this.style.color = "black"; // Change text color to black on hover
+          });
+
+          nameTag.addEventListener("mouseout", function () {
+            this.style.backgroundColor = ""; // Revert to default background color
+            this.style.color = "white"; // Revert text color to white
+          });
+
+          nameLink.appendChild(nameTag);
+          container.appendChild(nameLink);
+        });
+      }
+
+      // Initial creation and positioning of names
+      var nameContainer = document.querySelector(".name-container");
+      createAndPositionNames(nameContainer);
+
+      // Event listener for window resize
+      window.addEventListener("resize", function () {
+        refreshNameTags(nameContainer);
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        var lightSwitch = document.getElementById("lightSwitch");
+        lightSwitch.addEventListener('change', function () {
+          if (this.checked) {
+            document.body.style.backgroundColor = '#FFFF99'; // Light mode
+            document.body.style.color = '#000000'; // Adjust text color if needed
+          } else {
+            document.body.style.backgroundColor = ''; // Default mode
+            document.body.style.color = ''; // Default text color
+          }
+        });
+      });
+
     </script>
-  </body>
+</body>
+
 </html>

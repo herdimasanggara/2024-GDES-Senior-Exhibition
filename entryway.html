@@ -1,34 +1,387 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>entryway</title>
-    <link rel="stylesheet" href="rooms.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/oom6xvm.css" />
-    <meta name="'viewport" content="width=device-width,initial-scale=1.0" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="header">
-        <a href="index.html" class="logo-link">
-          <img src="black-secondary-2.3png.png" class="logo" />
-        </a>
-        <div class="buttons">
-          <a href="about.html" id="aboutBtn">ABOUT</a>
-          <button id="openBtn">DIRECTORY</button>
-        </div>
-      </div>
 
-      <div id="directory" class="slide-out">
-        <div class="directory-content">
-          <button id="closeBtn">X</button>
-        </div>
-      </div>
+<head>
+  <title>entryway</title>
+  <link rel="stylesheet" href="rooms.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/oom6xvm.css" />
+  <meta name="'viewport" content="width=device-width,initial-scale=1.0" />
+</head>
 
-      <div class="main">
-        <img src="Entry_outline.svg" class="desktop entry" />
-        <img src="Entry_Phone_outline.svg" class="mobile" />
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <a href="index.html" class="logo-link">
+        <img src="images/black-secondary-2.3png.png" class="logo" />
+      </a>
+      <div class="buttons">
+        <!-- <a href="about.html" id="aboutBtn">ABOUT</a> -->
+        <button id="openBtn"><span>DIRECTORY</span></button>
+        <!-- Replaced openBtn with toggleButton -->
       </div>
     </div>
-    <script src="script.js"></script>
-  </body>
+
+    <div class="toggle-switch">
+      <input type="checkbox" id="lightSwitch">
+      <label for="lightSwitch">Toggle Light</label>
+    </div>
+
+    <!-- Panel for Directory -->
+    <div id="directoryPanel" class="directory-panel">
+      <div class="main-content">
+        <!-- Row 1 -->
+        <div class="row">
+          <div class="left-panel"><a href="project-pages/anna-barnes.html">ANNA BARNES</a></div>
+          <div class="right-panel">
+            <i>Inkclusive. </I>The tattoo industry is notoriously exclusive and male-dominated. This leaves a difficult
+            road for BIPOC, queer, trans,
+            disabled, and femme people to find welcoming spaces within the tattoo community. Many of these marginalized
+            groups have
+            already paved their own way within the industry, and are working to open up spaces and opportunities for
+            others.
+            However, these coveted safe spaces to learn and get tattooed can still be challenging to find and access. My
+            biggest
+            hope with this project was to create a resource that could help those interested and searching for these
+            spaces to find
+            them, and demystify the process of learning and becoming a tattoo artist. This is only the first edition of
+            many to
+            come, as there is more that I have to learn and want to share. Here’s to safe and inclusive tattoo
+            experiences of all
+            kinds!
+          </div>
+        </div>
+        <!-- Row 2 -->
+        <div class="row">
+          <div class="left-panel"><a href="project-pages/aaron-thompson.html">AARON THOMPSON</a></div>
+          <div class="right-panel">
+            <i>Shoulder to Shoulder</i> is an impactful sculptural installation that deeply probes the essence of
+            solidarity,
+            self-sacrifice, and oppression within the context of protest. It profoundly reflects the collective spirit
+            of resistance
+            and the incredible power of unity against systemic injustices. Central to this installation is the use of
+            burlap and
+            mannequins, each chosen for their symbolic resonance and integral role in conveying the themes of human
+            resilience, the
+            flammability of change, and the faceless universality of the struggle for rights and recognition.
+
+            Burlap, with its coarse texture and simple, unassuming presence, is the primary material in this sculpture,
+            draped over
+            mannequins to represent the masses standing in solidarity. This choice of fabric is pivotal, not only for
+            its aesthetic
+            and tactile qualities but for its symbolic weight. Burlap embodies the rugged endurance of the collective
+            will,
+            signifying the grassroots nature of social movements and the interconnectedness of individuals fighting for
+            a common
+            cause. It speaks to the strength found in unity and the rough-hewn, diverse fabric of society coming
+            together to face
+            systemic challenges.
+          </div>
+        </div>
+        <!-- Row 3 -->
+        <div class="row">
+          <div class="left-panel"><a href="project-pages/jackayla-pendergast.html">JACKAYLA PENDERGAST</a></div>
+          <div class="right-panel">
+            With so many passions available, it is difficult to fit them all into one career when joining the workforce.
+            Expanding
+            our mindset beyond a singular job title is not only beneficial but necessary as AI begins to reduce the
+            value of formal
+            hard skills. Think beyond a career and focus on the core aspects that we enjoy when working. The BE
+            PASSIONATE campaign
+            advocates for this mindset shift by helping young individuals learn how to input their soft skills and trait
+            adjectives
+            into their resume. This widens career opportunities and leads to fulfilling employment that connects to who
+            they
+            naturally are. Focus on why the passion makes you passionate and share that with the world. <i>BE
+              PASSIONATE!</i>
+
+          </div>
+        </div>
+        <!-- Row 4 -->
+        <div class="row">
+          <div class="left-panel"><a href="project-pages/damon-jones.html">DAMON JONES</a></div>
+          <div class="right-panel">
+            <i>FUG</i>, my designer branding enterprise, crafts visually appealing products with a distinct philosophy,
+            developing a cohesive brand mirroring my style, values, and vision. <i>Fug</i>, meaning "Feature Un Real
+            Goons", embodies creativity, inspiring artists and rebels, transforming identity, defying norms. Through
+            <i>Fug</i>, I express and amplify my creative voice, contributing to a vibrant society. Conceptualizing,
+            designing products, establishing a visual language, engaging the audience through storytelling, and
+            strategic marketing.
+          </div>
+          </div>
+          <!-- Row 5 -->
+          <div class="row">
+            <div class="left-panel"><a href="project-pages/jasmine-knight.html">JASMINE KNIGHT</a></div>
+            <div class="right-panel">
+              <i>Cocoa & Berry: An Exploration of Brand Design</i> is a project I have wanted to do for a long time; it combines all
+              the things I love about graphic design! Cocoa & Berry came to life via my love for hot chocolate. I wanted to create a
+              brand that I would seriously buy from. The brand is a mix of bright, cute, elegant, and simple. I chose to host the
+              majority of the brand content on a website. On this site alongside the beverage itself, there is some other merchandise
+              that has been designed such as totes, stickers, and pins.
+              
+              The brand itself was designed after various aspects of a hot chocolate and berry fusion. The main logo is decorative and
+              includes elements that mimic things such as the swirl of whipped cream or a cherry that tops off the warm drink. This is
+              a recurring theme throughout the brand.
+            </div>
+          </div>
+          <!-- Row 6 -->
+          <div class="row">
+            <div class="left-panel"><a href="project-pages/colby-clarke.html">COLBY CLARKE</a></div>
+            <div class="right-panel">
+             <i>Swapparel</i> My pieces satirize how graphic designers don't like when people change existing structures, in this case apparel, that
+              have been already perfected, according to them. I decided to turn apparel design on its head by taking the essence of
+              popular articles of apparel and swapping them with another one to create new mashed-up clothing, or <i>"swapparel."</i>The
+              designs themselves are poking fun at the tiny white behind-the-neck tags filled with an overload of information which
+              are so much of a nuisance that they are often cut out. To challenge that, I made them the center of attention so that
+              there is no way to ignore or remove them. The Hoodie Hat makes fun of the materials list and the odd things they are
+              forced to disclose about what the clothing is made of. The Mug Hoodie mocks the laundry list of required steps and tips
+              for cleaning your clothes and their accompanying cryptic symbols. The Shirt Pants tease the unregulated sizing charts
+              and how they can often be unreliable.
+            </div>
+          </div>
+
+          <!-- More rows can be added similarly -->
+        </div>
+      </div>
+
+
+      <div class="name-container">
+        <div class="main">
+          <img src="Entry_outline.svg" class="desktop entry" />
+          <img src="Entry_Phone_outline.svg" class="mobile" />
+        </div>
+      </div>
+
+      <div class="overlay"></div>
+
+      <script>
+        // Get the overlay element
+        var overlay = document.querySelector('.overlay');
+
+        // Function to update the overlay based on the time of day
+        function updateOverlay() {
+          var now = new Date();
+          var hours = now.getHours();
+          var minutes = now.getMinutes();
+          var totalMinutes = hours * 60 + minutes;
+          var percentageOfDay = totalMinutes / (24 * 60);
+
+          // Interpolate between day, evening, and night colors with original opacities
+          var dayColor = [0, 0, 0]; // Yellow
+          var eveningColor = [100, 100, 0]; // Orange
+          var nightColor = [0, 0, 0];    // Black
+          var dayOpacity = 0.7;          // Original opacity for daytime
+          var eveningOpacity = 0.1;      // Original opacity for evening
+          var nightOpacity = 0.7;        // Original opacity for nighttime
+
+          var interpolatedColor;
+          var interpolatedOpacity;
+
+          if (percentageOfDay < 0.5) {
+            // Daytime to evening transition
+            interpolatedColor = interpolateColor(dayColor, eveningColor, percentageOfDay * 2);
+            interpolatedOpacity = interpolateOpacity(dayOpacity, eveningOpacity, percentageOfDay * 2);
+          } else {
+            // Evening to nighttime transition
+            interpolatedColor = interpolateColor(eveningColor, nightColor, (percentageOfDay - 0.5) * 2);
+            interpolatedOpacity = interpolateOpacity(eveningOpacity, nightOpacity, (percentageOfDay - 0.5) * 2);
+          }
+
+          // Set the background color and opacity of the overlay
+          overlay.style.backgroundColor = 'rgba(' + interpolatedColor.join(',') + ', ' + interpolatedOpacity + ')';
+        }
+
+        // Function to interpolate between two colors
+        function interpolateColor(color1, color2, ratio) {
+          var result = [];
+          for (var i = 0; i < 3; i++) {
+            result.push(Math.round(color1[i] * (1 - ratio) + color2[i] * ratio));
+          }
+          return result;
+        }
+
+        // Function to interpolate between two opacities
+        function interpolateOpacity(opacity1, opacity2, ratio) {
+          return opacity1 * (1 - ratio) + opacity2 * ratio;
+        }
+
+        // Update the overlay initially
+        updateOverlay();
+
+        // Update the overlay every second for smoother transition
+        setInterval(updateOverlay, 1000);
+        document.addEventListener("DOMContentLoaded", function () {
+          var panel = document.getElementById("directoryPanel");
+          panel.style.transform = "translateY(-100%)"; // Ensure initial state is set for JavaScript
+
+          var postItColors = [
+            "#ffadad",
+            "#ffd6a5",
+            "#fdffb6",
+            "#caffbf",
+            "#9bf6ff",
+            "#a0c4ff",
+            "#bdb2ff",
+            "#ffc6ff",
+          ];
+
+          // Apply random skew to the text inside openBtn
+          var openBtnText = document.querySelector("#openBtn span");
+          openBtnText.style.display = "inline-block"; // Make sure the span behaves like an inline element that can transform independently
+          openBtnText.style.transform = getRandomSkew();
+
+          document
+            .getElementById("openBtn")
+            .addEventListener("click", function () {
+              // Toggle panel visibility
+              if (panel.style.transform === "translateY(-100%)") {
+                panel.style.backgroundColor =
+                  postItColors[Math.floor(Math.random() * postItColors.length)];
+                panel.style.transform = "translateY(0%)"; // Slide down
+              } else {
+                panel.style.transform = "translateY(-100%)"; // Slide up
+              }
+            });
+
+          document
+            .getElementById("openBtn")
+            .addEventListener("mouseover", function () {
+              var randomColor =
+                postItColors[Math.floor(Math.random() * postItColors.length)];
+              this.style.backgroundColor = randomColor;
+            });
+
+          document
+            .getElementById("openBtn")
+            .addEventListener("mouseout", function () {
+              this.style.backgroundColor = ""; // Revert to default or specify a default color
+            });
+        });
+
+        function getRandomSkew() {
+          var skewX = Math.random() * 25 - 10; // Skew range between -10deg to 10deg
+          var skewY = Math.random() * 25 - 10;
+          return "skew(" + skewX + "deg, " + skewY + "deg)";
+        }
+
+        // Apply random skew to openBtn text on load
+        var openBtnText = document.querySelector("#openBtn span");
+        openBtnText.style.transform = getRandomSkew();
+
+        // Function to generate random coordinates within the name-container
+        function getRandomCoordinates(container) {
+          var containerRect = container.getBoundingClientRect();
+          var padding = 10; // Assume a padding of 10px on all sides if any
+          var diameter = 100; // Diameter of the circle (name tag)
+
+          // Adjust the range to ensure the entire name tag stays within the viewport
+          var x =
+            Math.random() * (containerRect.width - diameter - padding * 2) +
+            padding;
+          var y =
+            Math.random() * (containerRect.height - diameter - padding * 2) +
+            padding;
+
+          return { x: x, y: y };
+        }
+
+        // Function to remove and reposition name tags
+        function refreshNameTags(container) {
+          // Remove existing name tags
+          const existingTags = container.querySelectorAll(".name-tag");
+          existingTags.forEach(function (tag) {
+            tag.parentNode.removeChild(tag);
+          });
+
+          // Recreate and reposition name tags
+          createAndPositionNames(container);
+        }
+
+        // Function to create and position the name tags within the container
+        function createAndPositionNames(container) {
+          var postItColors = [
+            "#ffadad",
+            "#ffd6a5",
+            "#fdffb6",
+            "#caffbf",
+            "#9bf6ff",
+            "#a0c4ff",
+            "#bdb2ff",
+            "#ffc6ff",
+          ];
+          var namesAndLinks = [
+            { name: "ALICE FRANKLIN", link: "alice.html" },
+            { name: "BOB SMITH", link: "bob.html" },
+            { name: "CHARLIE JOHNSON", link: "charlie.html" },
+            { name: "DAVID MILLER", link: "david.html" },
+            { name: "EVE THOMAS", link: "eve.html" },
+            { name: "FRANK MOORE", link: "frank.html" },
+            { name: "GRACE TAYLOR", link: "grace.html" },
+            { name: "HENRY JONES", link: "henry.html" },
+          ];
+
+          namesAndLinks.forEach(function (item) {
+            var coordinates = getRandomCoordinates(container);
+            var nameLink = document.createElement("a");
+            nameLink.href = item.link;
+            var nameTag = document.createElement("div");
+            nameTag.textContent = item.name;
+            nameTag.classList.add("name-tag");
+            nameTag.style.left = coordinates.x + "px";
+            nameTag.style.top = coordinates.y + "px";
+            nameTag.style.transform = getRandomSkew(); // Apply random skew
+
+            // Add event listeners for hover effects
+            nameTag.addEventListener("mouseover", function () {
+              var randomColor =
+                postItColors[Math.floor(Math.random() * postItColors.length)];
+              this.style.backgroundColor = randomColor;
+              this.style.color = "black"; // Change text color to black on hover
+            });
+
+            nameTag.addEventListener("mouseout", function () {
+              this.style.backgroundColor = ""; // Revert to default background color
+              this.style.color = "white"; // Revert text color to white
+            });
+
+            nameLink.appendChild(nameTag);
+            container.appendChild(nameLink);
+          });
+        }
+
+        // Initial creation and positioning of names
+        var nameContainer = document.querySelector(".name-container");
+        createAndPositionNames(nameContainer);
+
+        // Event listener for window resize
+        window.addEventListener("resize", function () {
+          refreshNameTags(nameContainer);
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+          var lightSwitch = document.getElementById("lightSwitch");
+          lightSwitch.addEventListener('change', function () {
+            // Toggle background and text color based on the state of the switch
+            if (this.checked) {
+              document.body.style.backgroundColor = '#FFFF99'; // Light mode
+              document.body.style.color = '#000000'; // Adjust text color if needed
+            } else {
+              document.body.style.backgroundColor = ''; // Default mode
+              document.body.style.color = ''; // Default text color
+            }
+
+            // Toggle overlay visibility based on the state of the switch
+            var overlays = document.getElementsByClassName("overlay");
+            for (var i = 0; i < overlays.length; i++) {
+              if (this.checked) {
+                overlays[i].style.display = 'none'; // Hide overlay
+              } else {
+                overlays[i].style.display = ''; // Show overlay
+              }
+            }
+          });
+        });
+
+      </script>
+</body>
+
 </html>

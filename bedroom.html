@@ -1,44 +1,470 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>bedroom</title>
-        <link  rel="stylesheet" href="rooms.css">
-        <link rel="stylesheet" href="https://use.typekit.net/oom6xvm.css">
-        <meta name="'viewport" content="width=device-width,initial-scale=1.0">
-    </head>
 
-    <!-- BEDROOM PAGE -->
+<head>
+  <title>bedroom</title>
+  <link rel="stylesheet" href="rooms.css">
+  <link rel="stylesheet" href="https://use.typekit.net/oom6xvm.css">
+  <meta name="'viewport" content="width=device-width,initial-scale=1.0">
+</head>
 
-    <body>
+<!-- BEDROOM PAGE -->
 
-        <div class="wrapper">
-            
-            <div class="header">
-                <a href="index.html" class="logo-link">
-                    <img src="black-secondary-2.3png.png" class="logo">
-                </a>
-                <div class="buttons">
-                    <a href="about.html" id="aboutBtn">ABOUT</a>
-                    <button id="openBtn">DIRECTORY</button>
-                </div>
+<body>
 
-            </div>
+  <div class="wrapper">
 
-            <div id="directory" class="slide-out">
-               <div class="directory-content">
-                    <button id="closeBtn">X</button>
-               </div>
-            </div>
-            
-            <div class="main bedroom">
-               <img src="Desktop_Bedroom.svg" class="desktop">
-               <img src="Phone_Bedroom.svg" class="mobile">
-            </div>
+    <div class="header">
+      <a href="index.html" class="logo-link">
+        <img src="images/black-secondary-2.3png.png" class="logo" />
+      </a>
+      <div class="buttons">
+        <!-- <a href="about.html" id="aboutBtn">ABOUT</a> -->
+        <button id="openBtn"><span>DIRECTORY</span></button>
+        <!-- Replaced openBtn with toggleButton -->
+      </div>
+    </div>
 
+    <div class="toggle-switch">
+      <input type="checkbox" id="lightSwitch">
+      <label for="lightSwitch">Toggle Light</label>
+    </div>
 
+    <!-- Panel for Directory -->
+    <div id="directoryPanel" class="directory-panel">
+      <div class="main-content">
+        <!-- Row 1 -->
+        <div class="row">
+          <div class="left-panel"><a href="project-pages/jenna-kareliussen.html">JENNA KARELIUSSEN</a></div>
+          <div class="right-panel">
+            <i>Masking Reality</i> presents a series of multimedia masks that examine the role of surrealism in identity
+            and liberation. Each element in the work serves a distinct purpose: the delicate intricacies of yarn and
+            embroidery symbolize the interconnectedness of the human experience, while the malleable nature of clay and
+            wire represents the fluidity of self. Together, these elements draw from my own experiences navigating the
+            complexities and inner turmoil inherent in my journey toward self-discovery.
+          </div>
         </div>
-        <script src="script.js"></script>
-    </body>
+        <!-- Row 2 -->
+        <div class="row">
+          <div class="left-panel"><a href="project-pages/joy-lee.html">JOY LEE</a></div>
+          <div class="right-panel">
+            <i>Penny and the Land of Grief</i> is a children’s book that describes the five stages of grief as cities
+            that you travel through. Grief is not a linear process, regardless of what we like to believe. You can spend
+            a long time in anger, or bounce between depression and denial. But regardless of what “city” you’re in, the
+            end of that journey is always going to be acceptance. I wanted to be able to provide both children and
+            adults with the language that we sometimes find ourselves lacking when are going through hard times, such as
+            the death of a family member, the loss of our home, or the end of a friendship.
+          </div>
+        </div>
+        <!-- Row 3 -->
+        <div class="row">
+          <div class="left-panel"><a href="project-pages/shara-yu.html">SHARA YU</a></div>
+          <div class="right-panel">
+
+          </div>
+        </div>
+        <!-- Row 4 -->
+        <div class="row">
+          <div class="left-panel"><a href="project-pages/jonah-shoval.html">JONAH SHOVAL</a></div>
+          <div class="right-panel">
+            <i>FOREVER CANVAS.</i> I don't want to use clothes as a canvas to create a brand but as a way to immortalize
+            pieces of my
+            past work that are important to me. In doing so, I am making a Forever Canvas. Over the past four years,
+            most of my work has been posters, which I feel have a defined life span. Usually, posters wind up forgotten
+            once the advertising period or project is over, indicating the end of the posters' lifetime. By using
+            clothing as a medium for design, I can create things that are more meaningful to me and will have a more
+            extended life than any poster could.
+          </div>
+        </div>
+        <!-- Row 5 -->
+        <div class="row">
+          <div class="left-panel"><a href="project-pages/bree-dorman.html">BREE DORMAN</a></div>
+          <div class="right-panel">
+            <i>The Reminiscence Collection</i> website is a comprehensive archive that catalogs over 170 video games,
+            each thoughtfully detailed with information about their developers, publishers, series, platforms, and more.
+            This concept was influenced by a poster and book design I created in Fall 2021, featuring cover images and
+            thorough descriptions. The website elevates user experience by offering features like cover image downloads
+            and zooming capabilities. Additionally, search and sorting tools are easily accessible, found in both the
+            top navigation bar and the consistently positioned game icon sidebar, situated on the left side of each page
+            and revealed upon clicking. It also offers accessibility options including a light/dark mode switch,
+            adjustable font sizes, and text-to-speech functionality. Registered members can engage with the content by
+            liking, commenting, and rating games, while a user-friendly dashboard conveniently tracks these interactions
+            for easy historical access. This platform is a demonstration to my passion for graphic design and my
+            enthusiasm for video gaming, offering a space where others can also appreciate and interact with their
+            beloved games. <a
+              href="https://breed2.github.io/reminiscencecollection/">breed2.github.io/reminiscencecollection/</a>
+          </div>
+        </div>
+        <!-- Row 6 -->
+        <div class="row">
+          <div class="left-panel"><a href="project-pages/megan-caramico.html">MEGAN CARAMICO</a></div>
+          <div class="right-panel">
+            <i>First Last Words.</i> First Last Words is a death writing prompt book. Writing about death is one way to
+            face anxieties about it.
+            My main goal in making this book was to help people facing fears of death, leading them to start talking
+            about it more.
+
+            It covers almost all topics related to death, including death rituals, bucket lists, writing to loved ones
+            who have passed, final words, final meals, and the afterlife, just to name a few. Everyone’s experience with
+            death differs, which is heavily considered. Anyone and everyone can complete the prompts; they are left
+            vague on purpose.
+
+            Most prompts are journal-style, but there are a few creative writing, drawing, and collaging prompts
+            throughout the book. The prompts are divided into segments: life, grief, dying, dead, and afterlife. Between
+            each segment is a transition page that includes definitions you may need.
+          </div>
+        </div>
+        <!-- Row 7 -->
+        <div class="row">
+          <div class="left-panel"><a href="project-pages/angie-fabien.html">ANGIE FABIEN</a></div>
+          <div class="right-panel">
+            <i>finding my way to the art world.</i> a book with illustrations divided into three small chapters telling
+            the story of me trying to find my way in
+            the art world
+          </div>
+        </div>
+        <!-- Row 8 -->
+        <div class="row">
+          <div class="left-panel"><a href="project-pages/jess-mayrides.html">JESS MAYRIDES</a></div>
+          <div class="right-panel">
+            <i>Harmony Unveiled.</i> Music has been a big part of me since I was young, and I’ve had all these thoughts
+            about what music means to people and how it affects them. This project aims to explore the proven impacts of
+            music on humanity/society.
+            I explored four topics to connect music and humanity: humanness, psychology, place, and art.
+            For my research, I interviewed a handful of close friends about their
+            experiences with music, with questions loosely revolving around each topic. Each topic (mentioned above) had
+            three questions each in order to gain a wide variety of answers. The interview was in person and recorded in
+            a casual setting. All interviews were edited and compiled into one large video interspersed with recordings
+            of concerts (both mine and others) for added musicality.
+            I compiled more formal internet research and created 4 booklets broaching each topic in a dynamic and
+            colorful way using typography and image gradients. These booklets are each placed inside a CD case with a
+            DVD that contains each corresponding video section. The videos were available to play on a portable DVD
+            player at the Open House exhibition, and the full video is available to watch on Youtube starting May 2nd,
+            2024.
+          </div>
+        </div>
+        <!-- Row 9 -->
+        <div class="row">
+          <div class="left-panel"><a href="project-pages/priya-sugathan.html">PRIYA SUGATHAN</a></div>
+          <div class="right-panel">
+            <i>The Twenty Something Survival Guide.</i> This care package will consume of a couple of different guides
+            to help navigate women in their twenties.
+            Here we have a survival guide book, mini how to zines, a planner, and some stickers. These together as a
+            care package are encompass the idea that stemmed from just the survival guide book. The survival guide
+            showcases chapters that illuminate different types of topics such as finance, self care, independent
+            responsibilities (etc). The mini how to zines stem from each chapter in the survival guide, the purpose it
+            holds is because it's so mini, you are just able to put it in your pocket! As a woman going through her
+            twenties right now, I wish I had a guide or multiple guides to assist me even before entering my twenties. I
+            want this care package to be a helping hand for all the women out there who are struggling on knowing where
+            to start their journey as a twenty something year old.
+          </div>
+        </div>
+        <!-- Row 10 -->
+        <div class="row">
+          <div class="left-panel"><a href="project-pages/liza-chaplin.html">LIZA CHAPLIN</a></div>
+          <div class="right-panel">
+            <i>Raw Material</i> is an archival diary that serves as a testament to the importance of note taking and the
+            preservation of process work. The book is a collection of notes, sketches, and other materials that inspire
+            my design practice. In essence, it's an exploration into archiving and preserving concepts. Over the last
+            few years, I've gathered bits and pieces of my life, insights gained, and thoughts pondered. These
+            fragments, though seemingly scattered, form the essence of my growth and exploration during this
+            transformative period. Here, I delve into the importance of exploratory work and evolving concepts,
+            capturing the art of process work and unfinished thoughts. In a digital age, the archival diary stands as a
+            beacon of permanence, and a sanctuary for unfinished thoughts to evolve and grow.
+          </div>
+        </div>
+        <!-- Row 11 -->
+        <div class="row">
+          <div class="left-panel"><a href="project-pages/jood-farkouh.html">JOOD FARKOUH</a></div>
+          <div class="right-panel">
+            <i>Intricate Nothings.s</i>Mosaics and traditional Arabic embroidery have many similarities, both meticulous
+            labors of love. Each
+            stitch a tile; a piece of a larger whole. A single tessera or a cross-stitch on its own is beautiful in its
+            simplicity, but add one more, then another, and another, and soon a narrative is born. But the effort behind
+            these individually laid tiles/made stitches often go unnoticed in the places they live and the purposes they
+            serve. Thus, I combined these two art forms by creating an embroidered mosaic of decorative ornamental
+            patterns and designs. Whether the time and work put into this piece will go unnoticed remains to be seen.
+          </div>
+        </div>
+        <!-- Row 12 -->
+        <div class="row">
+          <div class="left-panel"><a href="project-pages/sophie-hampton.html">SOPHIE HAMPTON</a></div>
+          <div class="right-panel">
+            My synthesis project focuses on the complexities of daughterhood and mother/daughter relationships. The
+            <i>MotherBoard Archive</i> is a curated library of resources and media centered around navigating complex
+            mother/daughter relationships, girlhood, self healing, and healing relational patterns. The digital archive
+            functions as a gentle guide; a recipe for healing and self reflection. The MotherBoard archive can be
+            engaged with purely as a resource library, or (by means of an interactive personality quiz function) as a
+            way to generate a personalized list of resource and media recommendations based on the user’s specific need
+            within this broader topic. This project is also about finding community within the complexities of these
+            relationships. Using a handful of public engagement prompts I have also been gathering anonymous survey
+            responses, voicemails, and text messages to help me understand where communication struggles exist within
+            the context of mother/daughter or parent/child relationships. The user is also able to browse through a
+            growing selection of these anonymous voicemail and text submissions. <a
+              href="http://motherboardarchive.com/">motherboardarchive.com</a>
+          </div>
+        </div>
+        <!-- Row 13 -->
+        <div class="row">
+          <div class="left-panel"><a href="project-pages/kien-ngo.html">KIEN NGO</a></div>
+          <div class="right-panel">
+            <i>I.</i> My body is my artwork, my end goal, my masterpiece. Coming to terms of how I look is loving
+            myself. Working
+            on myself is a form of self therapy, to clear my mind in turn allowing myself to become more creative. At
+            the end of the day all I have is myself and so be it, my book is a photo memoir. I, I, I - this is a book
+            about a centered obsession about myself. I am a narcissist.
+          </div>
+        </div>
+        <!-- More rows can be added similarly -->
+      </div>
+    </div>
+
+    <div class="name-container">
+
+      <div class="main bedroom">
+        <img src="Desktop_Bedroom.svg" class="desktop">
+        <img src="Phone_Bedroom.svg" class="mobile">
+      </div>
+    </div>
+    <div class="overlay"></div>
+
+    <script>
+      // Get the overlay element
+      var overlay = document.querySelector('.overlay');
+
+      // Function to update the overlay based on the time of day
+      function updateOverlay() {
+        var now = new Date();
+        var hours = now.getHours();
+        var minutes = now.getMinutes();
+        var totalMinutes = hours * 60 + minutes;
+        var percentageOfDay = totalMinutes / (24 * 60);
+
+        // Interpolate between day, evening, and night colors with original opacities
+        var dayColor = [0, 0, 0]; // Yellow
+        var eveningColor = [100, 100, 0]; // Orange
+        var nightColor = [0, 0, 0];    // Black
+        var dayOpacity = 0.7;          // Original opacity for daytime
+        var eveningOpacity = 0.1;      // Original opacity for evening
+        var nightOpacity = 0.7;        // Original opacity for nighttime
+
+        var interpolatedColor;
+        var interpolatedOpacity;
+
+        if (percentageOfDay < 0.5) {
+          // Daytime to evening transition
+          interpolatedColor = interpolateColor(dayColor, eveningColor, percentageOfDay * 2);
+          interpolatedOpacity = interpolateOpacity(dayOpacity, eveningOpacity, percentageOfDay * 2);
+        } else {
+          // Evening to nighttime transition
+          interpolatedColor = interpolateColor(eveningColor, nightColor, (percentageOfDay - 0.5) * 2);
+          interpolatedOpacity = interpolateOpacity(eveningOpacity, nightOpacity, (percentageOfDay - 0.5) * 2);
+        }
+
+        // Set the background color and opacity of the overlay
+        overlay.style.backgroundColor = 'rgba(' + interpolatedColor.join(',') + ', ' + interpolatedOpacity + ')';
+      }
+
+      // Function to interpolate between two colors
+      function interpolateColor(color1, color2, ratio) {
+        var result = [];
+        for (var i = 0; i < 3; i++) {
+          result.push(Math.round(color1[i] * (1 - ratio) + color2[i] * ratio));
+        }
+        return result;
+      }
+
+      // Function to interpolate between two opacities
+      function interpolateOpacity(opacity1, opacity2, ratio) {
+        return opacity1 * (1 - ratio) + opacity2 * ratio;
+      }
+
+      // Update the overlay initially
+      updateOverlay();
+
+      // Update the overlay every second for smoother transition
+      setInterval(updateOverlay, 1000);
+      document.addEventListener("DOMContentLoaded", function () {
+        var panel = document.getElementById("directoryPanel");
+        panel.style.transform = "translateY(-100%)"; // Ensure initial state is set for JavaScript
+
+        var postItColors = [
+          "#ffadad",
+          "#ffd6a5",
+          "#fdffb6",
+          "#caffbf",
+          "#9bf6ff",
+          "#a0c4ff",
+          "#bdb2ff",
+          "#ffc6ff",
+        ];
+
+        // Apply random skew to the text inside openBtn
+        var openBtnText = document.querySelector("#openBtn span");
+        openBtnText.style.display = "inline-block"; // Make sure the span behaves like an inline element that can transform independently
+        openBtnText.style.transform = getRandomSkew();
+
+        document
+          .getElementById("openBtn")
+          .addEventListener("click", function () {
+            // Toggle panel visibility
+            if (panel.style.transform === "translateY(-100%)") {
+              panel.style.backgroundColor =
+                postItColors[Math.floor(Math.random() * postItColors.length)];
+              panel.style.transform = "translateY(0%)"; // Slide down
+            } else {
+              panel.style.transform = "translateY(-100%)"; // Slide up
+            }
+          });
+
+        document
+          .getElementById("openBtn")
+          .addEventListener("mouseover", function () {
+            var randomColor =
+              postItColors[Math.floor(Math.random() * postItColors.length)];
+            this.style.backgroundColor = randomColor;
+          });
+
+        document
+          .getElementById("openBtn")
+          .addEventListener("mouseout", function () {
+            this.style.backgroundColor = ""; // Revert to default or specify a default color
+          });
+      });
+
+      function getRandomSkew() {
+        var skewX = Math.random() * 25 - 10; // Skew range between -10deg to 10deg
+        var skewY = Math.random() * 25 - 10;
+        return "skew(" + skewX + "deg, " + skewY + "deg)";
+      }
+
+      // Apply random skew to openBtn text on load
+      var openBtnText = document.querySelector("#openBtn span");
+      openBtnText.style.transform = getRandomSkew();
+
+      // Function to generate random coordinates within the name-container
+      function getRandomCoordinates(container) {
+        var containerRect = container.getBoundingClientRect();
+        var padding = 10; // Assume a padding of 10px on all sides if any
+        var diameter = 100; // Diameter of the circle (name tag)
+
+        // Adjust the range to ensure the entire name tag stays within the viewport
+        var x =
+          Math.random() * (containerRect.width - diameter - padding * 2) +
+          padding;
+        var y =
+          Math.random() * (containerRect.height - diameter - padding * 2) +
+          padding;
+
+        return { x: x, y: y };
+      }
+
+      // Function to remove and reposition name tags
+      function refreshNameTags(container) {
+        // Remove existing name tags
+        const existingTags = container.querySelectorAll(".name-tag");
+        existingTags.forEach(function (tag) {
+          tag.parentNode.removeChild(tag);
+        });
+
+        // Recreate and reposition name tags
+        createAndPositionNames(container);
+      }
+
+      // Function to create and position the name tags within the container
+      function createAndPositionNames(container) {
+        var postItColors = [
+          "#ffadad",
+          "#ffd6a5",
+          "#fdffb6",
+          "#caffbf",
+          "#9bf6ff",
+          "#a0c4ff",
+          "#bdb2ff",
+          "#ffc6ff",
+        ];
+        var namesAndLinks = [
+          { name: "JENNA KARELIUSSEN", link: "" },
+          { name: "JOY LEE", link: "" },
+          { name: "SHARA YU", link: "" },
+          { name: "JONAH SHOVAL", link: "" },
+          { name: "BREE DORMAN", link: "" },
+          { name: "MEGAN CARAMICO", link: "" },
+          { name: "ANGIE FABIEN", link: "" },
+          { name: "JESS MAYRIDES", link: "" },
+          { name: "PRIYA SUGATHAN", link: "" },
+          { name: "LIZA CHAPLIN", link: "" },
+          { name: "JOOD FARKOUH", link: "" },
+          { name: "SOPHIE HAMPTON", link: "" },
+          { name: "KIEN NGO", link: "" },
+        ];
+
+        namesAndLinks.forEach(function (item) {
+          var coordinates = getRandomCoordinates(container);
+          var nameLink = document.createElement("a");
+          nameLink.href = item.link;
+          var nameTag = document.createElement("div");
+          nameTag.textContent = item.name;
+          nameTag.classList.add("name-tag");
+          nameTag.style.left = coordinates.x + "px";
+          nameTag.style.top = coordinates.y + "px";
+          nameTag.style.transform = getRandomSkew(); // Apply random skew
+
+          // Add event listeners for hover effects
+          nameTag.addEventListener("mouseover", function () {
+            var randomColor =
+              postItColors[Math.floor(Math.random() * postItColors.length)];
+            this.style.backgroundColor = randomColor;
+            this.style.color = "black"; // Change text color to black on hover
+          });
+
+          nameTag.addEventListener("mouseout", function () {
+            this.style.backgroundColor = ""; // Revert to default background color
+            this.style.color = "black"; // Revert text color to white
+          });
+
+          nameLink.appendChild(nameTag);
+          container.appendChild(nameLink);
+        });
+      }
+
+      // Initial creation and positioning of names
+      var nameContainer = document.querySelector(".name-container");
+      createAndPositionNames(nameContainer);
+
+      // Event listener for window resize
+      window.addEventListener("resize", function () {
+        refreshNameTags(nameContainer);
+      });
+
+
+      document.addEventListener("DOMContentLoaded", function () {
+        var lightSwitch = document.getElementById("lightSwitch");
+        lightSwitch.addEventListener('change', function () {
+          // Toggle background and text color based on the state of the switch
+          if (this.checked) {
+            document.body.style.backgroundColor = '#FFFF99'; // Light mode
+            document.body.style.color = '#000000'; // Adjust text color if needed
+          } else {
+            document.body.style.backgroundColor = ''; // Default mode
+            document.body.style.color = ''; // Default text color
+          }
+
+          // Toggle overlay visibility based on the state of the switch
+          var overlays = document.getElementsByClassName("overlay");
+          for (var i = 0; i < overlays.length; i++) {
+            if (this.checked) {
+              overlays[i].style.display = 'none'; // Hide overlay
+            } else {
+              overlays[i].style.display = ''; // Show overlay
+            }
+          }
+        });
+      });
+
+    </script>
+
+</body>
 
 
 
