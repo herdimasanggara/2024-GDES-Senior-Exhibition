@@ -5,14 +5,14 @@
   <title>bedroom</title>
   <link rel="stylesheet" href="rooms.css">
   <link rel="stylesheet" href="https://use.typekit.net/oom6xvm.css">
-  <meta name="'viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
 
 <!-- BEDROOM PAGE -->
 
 <body>
 
-  <div class="wrapper">
+  <div class="wrapper" id="pageWrapper">
 
     <div class="header">
       <a href="index.html" class="logo-link">
@@ -220,10 +220,9 @@
     </div>
 
     <div class="name-container">
-
       <div class="main">
-        <img src="Desktop_Bedroom.svg" class="desktop">
-        <img src="Phone_Bedroom.svg" class="mobile">
+        <img src="Desktop_Bedroom.svg" class="desktop" />
+        <img src="Phone_Bedroom.svg" class="mobile" />
       </div>
     </div>
     <div class="overlay"></div>
@@ -284,6 +283,17 @@
 
       // Update the overlay every second for smoother transition
       setInterval(updateOverlay, 1000);
+
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .getElementById("pageWrapper")
+          .addEventListener("click", function () {
+            console.log("Click detected. Current class: " + this.className);
+            this.classList.toggle("night-mode");
+            console.log("Toggled class. New class: " + this.className);
+          });
+      });
+
       document.addEventListener("DOMContentLoaded", function () {
         var panel = document.getElementById("directoryPanel");
         panel.style.transform = "translateY(-100%)"; // Ensure initial state is set for JavaScript
@@ -384,19 +394,19 @@
           "#ffc6ff",
         ];
         var namesAndLinks = [
-          { name: "JENNA KARELIUSSEN", link: "" },
-          { name: "JOY LEE", link: "" },
-          { name: "SHARA YU", link: "" },
-          { name: "JONAH SHOVAL", link: "" },
-          { name: "BREE DORMAN", link: "" },
-          { name: "MEGAN CARAMICO", link: "" },
-          { name: "ANGIE FABIEN", link: "" },
-          { name: "JESS MAYRIDES", link: "" },
-          { name: "PRIYA SUGATHAN", link: "" },
-          { name: "LIZA CHAPLIN", link: "" },
-          { name: "JOOD FARKOUH", link: "" },
-          { name: "SOPHIE HAMPTON", link: "" },
-          { name: "KIEN NGO", link: "" },
+          { name: "JENNA KARELIUSSEN", link: "project-pages/jenna-kareliussen.html" },
+          { name: "JOY LEE", link: "project-pages/joy-lee.html" },
+          { name: "SHARA YU", link: "project-pages/shara-yu.html" },
+          { name: "JONAH SHOVAL", link: "project-pages/jonah-shoval.html" },
+          { name: "BREE DORMAN", link: "project-pages/bree-dorman.html" },
+          { name: "MEGAN CARAMICO", link: "project-pages/megan-caramico.html" },
+          { name: "ANGIE FABIEN", link: "project-pages/angie-fabien.html" },
+          { name: "JESS MAYRIDES", link: "project-pages/jess-mayrides.html" },
+          { name: "PRIYA SUGATHAN", link: "project-pages/priya-sugathan.html" },
+          { name: "LIZA CHAPLIN", link: "project-pages/liza-chaplin.html" },
+          { name: "JOOD FARKOUH", link: "project-pages/jood-farkouh.html" },
+          { name: "SOPHIE HAMPTON", link: "project-pages/sophie-hampton.html" },
+          { name: "KIEN NGO", link: "project-pages/kien-ngo.html" },
         ];
 
         namesAndLinks.forEach(function (item) {
