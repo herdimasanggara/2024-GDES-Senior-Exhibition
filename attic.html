@@ -225,11 +225,13 @@
         </div>
       </div>
 
-      <div class="main">
+      <div class="name-container">
+        <div class="main attic">
         <img src="Desktop_Attic.svg" class="desktop" />
         <img src="Phone_Attic.svg" class="mobile" />
       </div>
     </div>
+    </div></body>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         // Check if the screen width is greater than 700px
@@ -375,7 +377,10 @@
           "#ffc6ff",
         ];
         var namesAndLinks = [
-          { name: "ALICE FRANKLIN", link: "project-pages/firstname-lastname.html" },
+          {
+            name: "ALICE FRANKLIN",
+            link: "project-pages/firstname-lastname.html",
+          },
           { name: "BOB SMITH", link: "bob.html" },
           { name: "CHARLIE JOHNSON", link: "charlie.html" },
           { name: "DAVID MILLER", link: "david.html" },
@@ -406,7 +411,7 @@
 
           nameTag.addEventListener("mouseout", function () {
             this.style.backgroundColor = ""; // Revert to default background color
-            this.style.color = "white"; // Revert text color to white
+            this.style.color = "black"; // Revert text color to white
           });
 
           nameLink.appendChild(nameTag);
@@ -436,5 +441,4 @@
         });
       });
     </script>
-  </body>
 </html>
