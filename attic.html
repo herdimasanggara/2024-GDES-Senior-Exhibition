@@ -106,8 +106,8 @@
             <div class="left-panel">JADE STELLA</div>
             <div class="right-panel">
               <i>And here I still stand.</i> A sentiment that has been growing
-              more and more necessary. “I’m here. I’m here and I’m still
-              standing.” When the whole world feels as if it’s floating away and
+              more and more necessary. “I'm here. I'm here and I'm still
+              standing.” When the whole world feels as if it's floating away and
               I have nothing to hold on to, how can I reroot myself again? When
               the things that were once thought as promised, are not, where can
               I look to find safety again? When everything once grasped tight is
@@ -214,7 +214,7 @@
               changes or options after graduating. At this time, how do we shape
               ourselves to fit this new situation and what could we do in/for
               this society in the future? I see the real world as a new learning
-              environment, much like a child’s perspective. Viewing myself as a
+              environment, much like a child's perspective. Viewing myself as a
               child, I anticipate facing unknown challenges ahead. Similar to
               how kids learn through the alphabet, I propose an “alphabet book”
               as a symbolic tool for the young generation to understand and
@@ -227,218 +227,217 @@
 
       <div class="name-container">
         <div class="main attic">
-        <img src="Desktop_Attic.svg" class="desktop" />
-        <img src="Phone_Attic.svg" class="mobile" />
+          <img src="Desktop_Attic.svg" class="desktop" />
+          <img src="Phone_Attic.svg" class="mobile" />
+        </div>
       </div>
     </div>
-    </div></body>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Check if the screen width is greater than 700px
-        if (window.innerWidth > 700) {
-          const circleEffect = document.createElement("div");
-          circleEffect.style.position = "fixed";
-          circleEffect.style.top = "0";
-          circleEffect.style.left = "0";
-          circleEffect.style.width = "100%";
-          circleEffect.style.height = "100%";
-          circleEffect.style.pointerEvents = "none"; // Ensure the effect does not interfere with mouse events
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Check if the screen width is greater than 700px
+      if (window.innerWidth > 700) {
+        const circleEffect = document.createElement("div");
+        circleEffect.style.position = "fixed";
+        circleEffect.style.top = "0";
+        circleEffect.style.left = "0";
+        circleEffect.style.width = "100%";
+        circleEffect.style.height = "100%";
+        circleEffect.style.pointerEvents = "none"; // Ensure the effect does not interfere with mouse events
 
-          // Append the element to the body
-          document.body.appendChild(circleEffect);
+        // Append the element to the body
+        document.body.appendChild(circleEffect);
 
-          // Function to apply the invert filter
-          function applyInvert() {
-            document.body.style.filter = "invert(100%)";
-          }
+        // Function to apply the invert filter
+        function applyInvert() {
+          document.body.style.filter = "invert(100%)";
+        }
 
-          // Function to remove the invert filter
-          function removeInvert() {
-            document.body.style.filter = "none";
-          }
+        // Function to remove the invert filter
+        function removeInvert() {
+          document.body.style.filter = "none";
+        }
 
-          // Initially remove invert when the page loads
-          removeInvert();
+        // Initially remove invert when the page loads
+        removeInvert();
 
-          // Add event listener for mousemove to update the circle effect's position
-          document.addEventListener("mousemove", function (e) {
-            const x = e.clientX;
-            const y = e.clientY;
-            const radius = 200; // Adjust radius as needed
-            circleEffect.style.backgroundImage = `radial-gradient(circle ${radius}px at ${x}px ${y}px, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 70%, rgba(255,255,255,1) 100%)`;
-            applyInvert(); // Apply invert filter when mouse is moving within the viewport
-          });
+        // Add event listener for mousemove to update the circle effect's position
+        document.addEventListener("mousemove", function (e) {
+          const x = e.clientX;
+          const y = e.clientY;
+          const radius = 200; // Adjust radius as needed
+          circleEffect.style.backgroundImage = `radial-gradient(circle ${radius}px at ${x}px ${y}px, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 70%, rgba(255,255,255,1) 100%)`;
+          applyInvert(); // Apply invert filter when mouse is moving within the viewport
+        });
 
-          // Add event listener for mouseleave to remove the circle effect and invert filter when the mouse leaves the browser window
-          document.addEventListener("mouseleave", function (e) {
-            circleEffect.style.backgroundImage = "none"; // Remove the effect when the mouse leaves the window
-            removeInvert(); // Also remove the invert filter
-          });
+        // Add event listener for mouseleave to remove the circle effect and invert filter when the mouse leaves the browser window
+        document.addEventListener("mouseleave", function (e) {
+          circleEffect.style.backgroundImage = "none"; // Remove the effect when the mouse leaves the window
+          removeInvert(); // Also remove the invert filter
+        });
+      }
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      var panel = document.getElementById("directoryPanel");
+      panel.style.transform = "translateY(-100%)"; // Ensure initial state is set for JavaScript
+
+      var postItColors = [
+        "#ffadad",
+        "#ffd6a5",
+        "#fdffb6",
+        "#caffbf",
+        "#9bf6ff",
+        "#a0c4ff",
+        "#bdb2ff",
+        "#ffc6ff",
+      ];
+
+      // Apply random skew to the text inside openBtn
+      var openBtnText = document.querySelector("#openBtn span");
+      openBtnText.style.display = "inline-block"; // Make sure the span behaves like an inline element that can transform independently
+      openBtnText.style.transform = getRandomSkew();
+
+      document.getElementById("openBtn").addEventListener("click", function () {
+        // Toggle panel visibility
+        if (panel.style.transform === "translateY(-100%)") {
+          panel.style.backgroundColor =
+            postItColors[Math.floor(Math.random() * postItColors.length)];
+          panel.style.transform = "translateY(0%)"; // Slide down
+        } else {
+          panel.style.transform = "translateY(-100%)"; // Slide up
         }
       });
 
-      document.addEventListener("DOMContentLoaded", function () {
-        var panel = document.getElementById("directoryPanel");
-        panel.style.transform = "translateY(-100%)"; // Ensure initial state is set for JavaScript
-
-        var postItColors = [
-          "#ffadad",
-          "#ffd6a5",
-          "#fdffb6",
-          "#caffbf",
-          "#9bf6ff",
-          "#a0c4ff",
-          "#bdb2ff",
-          "#ffc6ff",
-        ];
-
-        // Apply random skew to the text inside openBtn
-        var openBtnText = document.querySelector("#openBtn span");
-        openBtnText.style.display = "inline-block"; // Make sure the span behaves like an inline element that can transform independently
-        openBtnText.style.transform = getRandomSkew();
-
-        document
-          .getElementById("openBtn")
-          .addEventListener("click", function () {
-            // Toggle panel visibility
-            if (panel.style.transform === "translateY(-100%)") {
-              panel.style.backgroundColor =
-                postItColors[Math.floor(Math.random() * postItColors.length)];
-              panel.style.transform = "translateY(0%)"; // Slide down
-            } else {
-              panel.style.transform = "translateY(-100%)"; // Slide up
-            }
-          });
-
-        document
-          .getElementById("openBtn")
-          .addEventListener("mouseover", function () {
-            var randomColor =
-              postItColors[Math.floor(Math.random() * postItColors.length)];
-            this.style.backgroundColor = randomColor;
-          });
-
-        document
-          .getElementById("openBtn")
-          .addEventListener("mouseout", function () {
-            this.style.backgroundColor = ""; // Revert to default or specify a default color
-          });
-      });
-
-      function getRandomSkew() {
-        var skewX = Math.random() * 25 - 10; // Skew range between -10deg to 10deg
-        var skewY = Math.random() * 25 - 10;
-        return "skew(" + skewX + "deg, " + skewY + "deg)";
-      }
-
-      // Apply random skew to openBtn text on load
-      var openBtnText = document.querySelector("#openBtn span");
-      openBtnText.style.transform = getRandomSkew();
-
-      // Function to generate random coordinates within the name-container
-      function getRandomCoordinates(container) {
-        var containerRect = container.getBoundingClientRect();
-        var padding = 10; // Assume a padding of 10px on all sides if any
-        var diameter = 100; // Diameter of the circle (name tag)
-
-        // Adjust the range to ensure the entire name tag stays within the viewport
-        var x =
-          Math.random() * (containerRect.width - diameter - padding * 2) +
-          padding;
-        var y =
-          Math.random() * (containerRect.height - diameter - padding * 2) +
-          padding;
-
-        return { x: x, y: y };
-      }
-
-      // Function to remove and reposition name tags
-      function refreshNameTags(container) {
-        // Remove existing name tags
-        const existingTags = container.querySelectorAll(".name-tag");
-        existingTags.forEach(function (tag) {
-          tag.parentNode.removeChild(tag);
+      document
+        .getElementById("openBtn")
+        .addEventListener("mouseover", function () {
+          var randomColor =
+            postItColors[Math.floor(Math.random() * postItColors.length)];
+          this.style.backgroundColor = randomColor;
         });
 
-        // Recreate and reposition name tags
-        createAndPositionNames(container);
-      }
-
-      // Function to create and position the name tags within the container
-      function createAndPositionNames(container) {
-        var postItColors = [
-          "#ffadad",
-          "#ffd6a5",
-          "#fdffb6",
-          "#caffbf",
-          "#9bf6ff",
-          "#a0c4ff",
-          "#bdb2ff",
-          "#ffc6ff",
-        ];
-        var namesAndLinks = [
-          {
-            name: "ALICE FRANKLIN",
-            link: "project-pages/firstname-lastname.html",
-          },
-          { name: "BOB SMITH", link: "bob.html" },
-          { name: "CHARLIE JOHNSON", link: "charlie.html" },
-          { name: "DAVID MILLER", link: "david.html" },
-          { name: "EVE THOMAS", link: "eve.html" },
-          { name: "FRANK MOORE", link: "frank.html" },
-          { name: "GRACE TAYLOR", link: "grace.html" },
-          { name: "HENRY JONES", link: "henry.html" },
-        ];
-
-        namesAndLinks.forEach(function (item) {
-          var coordinates = getRandomCoordinates(container);
-          var nameLink = document.createElement("a");
-          nameLink.href = item.link;
-          var nameTag = document.createElement("div");
-          nameTag.textContent = item.name;
-          nameTag.classList.add("name-tag");
-          nameTag.style.left = coordinates.x + "px";
-          nameTag.style.top = coordinates.y + "px";
-          nameTag.style.transform = getRandomSkew(); // Apply random skew
-
-          // Add event listeners for hover effects
-          nameTag.addEventListener("mouseover", function () {
-            var randomColor =
-              postItColors[Math.floor(Math.random() * postItColors.length)];
-            this.style.backgroundColor = randomColor;
-            this.style.color = "black"; // Change text color to black on hover
-          });
-
-          nameTag.addEventListener("mouseout", function () {
-            this.style.backgroundColor = ""; // Revert to default background color
-            this.style.color = "black"; // Revert text color to white
-          });
-
-          nameLink.appendChild(nameTag);
-          container.appendChild(nameLink);
+      document
+        .getElementById("openBtn")
+        .addEventListener("mouseout", function () {
+          this.style.backgroundColor = ""; // Revert to default or specify a default color
         });
-      }
+    });
 
-      // Initial creation and positioning of names
-      var nameContainer = document.querySelector(".name-container");
-      createAndPositionNames(nameContainer);
+    function getRandomSkew() {
+      var skewX = Math.random() * 25 - 10; // Skew range between -10deg to 10deg
+      var skewY = Math.random() * 25 - 10;
+      return "skew(" + skewX + "deg, " + skewY + "deg)";
+    }
 
-      // Event listener for window resize
-      window.addEventListener("resize", function () {
-        refreshNameTags(nameContainer);
+    // Apply random skew to openBtn text on load
+    var openBtnText = document.querySelector("#openBtn span");
+    openBtnText.style.transform = getRandomSkew();
+
+    // Function to generate random coordinates within the name-container
+    function getRandomCoordinates(container) {
+      var containerRect = container.getBoundingClientRect();
+      var padding = 10; // Assume a padding of 10px on all sides if any
+      var diameter = 100; // Diameter of the circle (name tag)
+
+      // Adjust the range to ensure the entire name tag stays within the viewport
+      var x =
+        Math.random() * (containerRect.width - diameter - padding * 2) +
+        padding;
+      var y =
+        Math.random() * (containerRect.height - diameter - padding * 2) +
+        padding;
+
+      return { x: x, y: y };
+    }
+
+    // Function to remove and reposition name tags
+    function refreshNameTags(container) {
+      // Remove existing name tags
+      const existingTags = container.querySelectorAll(".name-tag");
+      existingTags.forEach(function (tag) {
+        tag.parentNode.removeChild(tag);
       });
 
-      document.addEventListener("DOMContentLoaded", function () {
-        var lightSwitch = document.getElementById("lightSwitch");
-        lightSwitch.addEventListener("change", function () {
-          if (this.checked) {
-            document.body.style.backgroundColor = "#FFFF99"; // Light mode
-            document.body.style.color = "#000000"; // Adjust text color if needed
-          } else {
-            document.body.style.backgroundColor = ""; // Default mode
-            document.body.style.color = ""; // Default text color
-          }
+      // Recreate and reposition name tags
+      createAndPositionNames(container);
+    }
+
+    // Function to create and position the name tags within the container
+    function createAndPositionNames(container) {
+      var postItColors = [
+        "#ffadad",
+        "#ffd6a5",
+        "#fdffb6",
+        "#caffbf",
+        "#9bf6ff",
+        "#a0c4ff",
+        "#bdb2ff",
+        "#ffc6ff",
+      ];
+      var namesAndLinks = [
+        {
+          name: "ALICE FRANKLIN",
+          link: "project-pages/firstname-lastname.html",
+        },
+        { name: "BOB SMITH", link: "bob.html" },
+        { name: "CHARLIE JOHNSON", link: "charlie.html" },
+        { name: "DAVID MILLER", link: "david.html" },
+        { name: "EVE THOMAS", link: "eve.html" },
+        { name: "FRANK MOORE", link: "frank.html" },
+        { name: "GRACE TAYLOR", link: "grace.html" },
+        { name: "HENRY JONES", link: "henry.html" },
+      ];
+
+      namesAndLinks.forEach(function (item) {
+        var coordinates = getRandomCoordinates(container);
+        var nameLink = document.createElement("a");
+        nameLink.href = item.link;
+        var nameTag = document.createElement("div");
+        nameTag.textContent = item.name;
+        nameTag.classList.add("name-tag");
+        nameTag.style.left = coordinates.x + "px";
+        nameTag.style.top = coordinates.y + "px";
+        nameTag.style.transform = getRandomSkew(); // Apply random skew
+
+        // Add event listeners for hover effects
+        nameTag.addEventListener("mouseover", function () {
+          var randomColor =
+            postItColors[Math.floor(Math.random() * postItColors.length)];
+          this.style.backgroundColor = randomColor;
+          this.style.color = "black"; // Change text color to black on hover
         });
+
+        nameTag.addEventListener("mouseout", function () {
+          this.style.backgroundColor = ""; // Revert to default background color
+          this.style.color = "black"; // Revert text color to white
+        });
+
+        nameLink.appendChild(nameTag);
+        container.appendChild(nameLink);
       });
-    </script>
+    }
+
+    // Initial creation and positioning of names
+    var nameContainer = document.querySelector(".name-container");
+    createAndPositionNames(nameContainer);
+
+    // Event listener for window resize
+    window.addEventListener("resize", function () {
+      refreshNameTags(nameContainer);
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      var lightSwitch = document.getElementById("lightSwitch");
+      lightSwitch.addEventListener("change", function () {
+        if (this.checked) {
+          document.body.style.backgroundColor = "#FFFF99"; // Light mode
+          document.body.style.color = "#000000"; // Adjust text color if needed
+        } else {
+          document.body.style.backgroundColor = ""; // Default mode
+          document.body.style.color = ""; // Default text color
+        }
+      });
+    });
+  </script>
 </html>
