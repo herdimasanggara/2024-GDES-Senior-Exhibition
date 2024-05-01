@@ -280,6 +280,7 @@ body {
 
 .desktop {
   display: block;
+  padding-top: 50px;
 }
 
 .entry {
