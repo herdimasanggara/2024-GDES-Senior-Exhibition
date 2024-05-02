@@ -584,15 +584,15 @@ body {
 
 .left-panel a {
   text-decoration: none;
-  color: blue;
+  color: darkslategrey;
 }
 
 .left-panel a:hover {
-  text-shadow: 0 0 5px blue;
+  text-shadow: 0 0 5px darkslategrey;
 }
 
 .left-panel a:visited {
-  color: blue;
+  color: darkslategrey;
 }
 
 .right-panel {
@@ -603,15 +603,28 @@ body {
 
 .right-panel a {
   text-decoration: none;
-  color: blue;
+  color: darkslategrey;
 }
 
 .right-panel a:hover {
-  text-shadow: 0 0 5px blue;
+  text-shadow: 0 0 5px darkslategrey;
 }
 
 .right-panel a:visited {
-  color: blue;
+  color: darkslategrey;
+}
+
+p a {
+  text-decoration: none;
+  color: peru;
+}
+
+p a:hover {
+  text-shadow: 0 0 5px peru;
+}
+
+p a:visited {
+  color: peru;
 }
 
 .toggle-switch {
