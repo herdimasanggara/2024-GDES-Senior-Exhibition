@@ -12,6 +12,7 @@ body {
   font-family: "neue-haas-unica";
   min-height: 100vh;
   overflow-x: hidden;
+  background-color: lightblue;
 }
 
 a {
@@ -688,30 +689,132 @@ a {
     border-left: solid black 2px;
     border-right: solid black 2px;
   }
-
-  
 }
 
-#infoCircle {
-  position: fixed; /* Makes it appear over the content */
-  top: 50%; /* Center vertically */
-  left: 50%; /* Center horizontally */
-  transform: translate(
-    -50%,
-    -50%
-  ); /* Adjust the centering to the div's own size */
-  width: 40%; /* Or any width you prefer */
-  height: 350px; /* Or any height you prefer */
-  background-color: black;
-  color: white;
+#mat {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px; /* Default width */
+  height: 200px; /* Default height */
+  background-color: peru;
+  color: black;
   text-align: center;
   border-radius: 30px;
-  visibility: hidden; /* Start hidden */
-  z-index: 10; /* Ensure it's on top of other content */
-  display: flex; /* Use flexbox to center the text */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  padding: 50px;
-  font-size: 40px;
-  font-family: "CustomerCopy";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vh;
+  font-family: "CustomerCopy", sans-serif;
+  visibility: visible;
+  z-index: 1001;
 }
+
+#mat:hover {
+  width: calc(100vw - 40px); /* Full viewport width minus the padding */
+  height: calc(100vh - 110px); /* Full viewport height minus top padding and 70px header */
+  bottom: 20px; /* 20px from the bottom */
+  top: 90px; /* 70px for the header plus 20px padding */
+  left: 20px; /* 20px from the left */
+  transform: none; /* Neutralize the transform */
+  font-size: 3vh; /* Larger font size */
+  padding: 70px 400px; /* Top padding to avoid overlap with the header, and side padding */
+  justify-content: center; /* Ensure text is centered */
+  align-items: center; /* Align text vertically in the center */
+  line-height: 3.2vh;
+}
+
+#mat::after {
+  content: "";
+  position: absolute;
+  top: 10px; /* Adjust for outer padding */
+  left: 10px; /* Adjust for outer padding */
+  right: 10px; /* Adjust for outer padding */
+  bottom: 10px; /* Adjust for outer padding */
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed black;
+  z-index: -1;
+}
+
+#mat:hover::after {
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px; /* Consistent 20px padding all around */
+  border-radius: 25px; /* Optional: No border-radius for full-screen mode */
+}
+
+@media screen and (max-width: 700px) {
+  #mat {
+    width: 200px; /* Smaller width for mobile devices */
+    height: 100px; /* Adjust the height accordingly */
+    font-size: 3vh; /* Smaller font size for better readability on small screens */
+    padding: 10px 20px; /* Adequate padding but smaller than desktop */
+    bottom: 10px; /* Closer to the bottom edge */
+    left: 50%; /* Keep it centered */
+    transform: translateX(-50%); /* Ensure it remains centered */
+  }
+
+  #mat:hover {
+    width: calc(100vw - 20px); /* Full viewport width */
+    height: calc(100vh - 90px); /* Adjust for mobile header height */
+    top: 80px; /* Maintain space for the header */
+    bottom: 20px; /* Let the height define the bottom */
+    left: 10px; /* Align to the left edge */
+    right: 20px;
+    padding: 40px; /* Simpler padding for mobile */
+    font-size: 3vh; /* Slightly larger font size when expanded */
+  }
+
+  #mat::after {
+    top: 5px; /* Adjusted to smaller inner padding */
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+  }
+
+  #mat:hover::after {
+    top: 5px; /* Padding to match the expanded state */
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+  }
+}
+
+.sun, .moon {
+  display: none; /* Initially hide both */
+  position: fixed;
+  top: 150px;
+  right: 80px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.sun {
+  background-color: yellow;
+  box-shadow: 0 0 20px 10px yellow, 0 0 40px 20px white; /* Glowing effect */
+}
+
+.moon {
+  background-color: silver;
+  box-shadow: 0 0 20px 10px white, 0 0 40px 20px white; /* Glowing effect */
+}
+
+/* Responsive adjustments for screens max-width: 700px */
+@media screen and (max-width: 700px) {
+  .sun, .moon {
+    top: 150px; /* Adjust the top position if needed */
+    left: 80px; /* Align to the left instead of right */
+    width: 100px; /* Adjusted width */
+    height: 100px; /* Adjusted height */
+    right: auto; /* Resetting the right property */
+  }
+}
+
+

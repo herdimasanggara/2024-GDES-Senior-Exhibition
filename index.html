@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>O P E N - H O U S E</title>
+    <link rel="icon" href="landing-color.ico" type="image/x-icon">
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="https://use.typekit.net/oom6xvm.css" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
@@ -18,18 +19,12 @@
         </div>
       </div>
 
+      <div class="sun"></div>
+<div class="moon"></div>
+
+
       <div class="wrapper">
-        <div id="infoCircle" style="visibility: hidden">
-          <svg width="100%" height="100%" viewBox="0 0 400 400">
-            <path id="circlePath" fill="transparent" d="M200,200 m-150,0 a150,150 0 1,0 300,0 a150,150 0 1,0 -300,0"/>
-            <text font-family="CustomerCopy" font-size="40">
-              <textPath xlink:href="#circlePath" startOffset="50%" text-anchor="middle" method="stretch" spacing="auto">
-                WELCOME!
-              </textPath>
-            </text>
-          </svg>
-        </div>
-        
+        <div id="mat" style="visibility: hidden">WELCOME!</div>
 
         <div class="left a">
           <div class="row a">
@@ -224,7 +219,7 @@
 
       document.addEventListener("DOMContentLoaded", function () {
         var aboutBtn = document.getElementById("aboutBtn");
-        var infoCircle = document.getElementById("infoCircle");
+        var infoCircle = document.getElementById("mat");
         aboutBtn.addEventListener("click", function () {
           if (infoCircle.style.visibility === "visible") {
             infoCircle.style.visibility = "hidden";
@@ -233,6 +228,41 @@
           }
         });
       });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        var mat = document.getElementById("mat");
+        var originalText = mat.textContent; // Save the original text
+
+        mat.addEventListener("mouseenter", function () {
+          this.textContent = "Give us the uttermost pleasure of inviting you into our humble abode — a space in which 71 deeply creative individuals have unapologetically explored their artistic potential to its fullest. Please take your time touring and examining every room consciously, absorbing the energy and life each piece emits. Allow us to say goodbye as we pack up to move out into a place of uncertainty and limitless possibilities."; // Change the text on hover
+        });
+
+        mat.addEventListener("mouseleave", function () {
+          this.textContent = originalText; // Revert to the original text on mouse leave
+        });
+      });
+
+      function updateTheme() {
+    const now = new Date();
+    const hour = now.getHours();
+    const body = document.body;
+    const sun = document.querySelector('.sun');
+    const moon = document.querySelector('.moon');
+
+    if (hour >= 6 && hour < 18) { // From 6 AM to 6 PM
+      body.style.backgroundColor = 'lightblue';
+      sun.style.display = 'block'; // Show sun
+      moon.style.display = 'none'; // Hide moon
+    } else { // From 6 PM to 6 AM
+      body.style.backgroundColor = 'dimgray';
+      sun.style.display = 'none'; // Hide sun
+      moon.style.display = 'block'; // Show moon
+    }
+  }
+
+  // Run the function on load and repeat every 15 minutes to update the theme
+  updateTheme();
+  setInterval(updateTheme, 900000); // 900000 milliseconds == 15 minutes
     </script>
   </body>
 </html>
