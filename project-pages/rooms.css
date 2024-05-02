@@ -582,10 +582,36 @@ body {
   font-size: 5vh;
 }
 
+.left-panel a {
+  text-decoration: none;
+  color: blue;
+}
+
+.left-panel a:hover {
+  text-shadow: 0 0 5px blue;
+}
+
+.left-panel a:visited {
+  color: blue;
+}
+
 .right-panel {
   flex: 2;
   font-family: "neue-haas-unica";
   font-size: 1.5vh;
+}
+
+.right-panel a {
+  text-decoration: none;
+  color: blue;
+}
+
+.right-panel a:hover {
+  text-shadow: 0 0 5px blue;
+}
+
+.right-panel a:visited {
+  color: blue;
 }
 
 .toggle-switch {
