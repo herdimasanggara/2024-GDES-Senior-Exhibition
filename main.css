@@ -698,8 +698,8 @@ a {
   transform: translateX(-50%);
   width: 600px; /* Default width */
   height: 200px; /* Default height */
-  background-color: peru;
-  color: black;
+  background-color: black;
+  color: white;
   text-align: center;
   border-radius: 30px;
   display: flex;
@@ -736,7 +736,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px dashed black;
+  border: 2px dashed white;
   z-index: -1;
 }
 
